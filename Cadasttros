@@ -1,0 +1,50 @@
+<html>
+    <head><meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <title>Formulários</title>
+        <link rel="stylesheet" type="text/css" href="estilo.css" />  
+    <body>
+        <h2>CADASTRO</h2>
+        <div id="divForm">
+            
+            <form method="GET" action=" salvar.php" onsubmit="return validar()"
+                  enctype="multipart/form-data">
+            <label> Nome: </label> <br>
+        <input type="text"  name="txtNome" id="txtName"
+               placeholder="Digite aqui o nome do produto"  size="40" /> <br>
+        
+       
+        
+        <label for="txtvalor"> Preço: </label> <br>
+        <input type="text"  name="txtValor" id="txtValor"
+               placeholder="Digite aqui o preço do produto" size="40" /><br>
+       
+        <label for="txtquantidade">Quantidade: </label> <br>
+        <input type="text"  name="txtQuantidade" id="txtQuantidade"
+               placeholder="Digite aqui a quantidade do produto" size="40" /><br> 
+      
+        <label for="txtdata"> Data de Validade </label> <br>
+        <input type="text" name="txtdata" id="txtData"
+               placeholder="Digite aqui a data de validade do produto" size="30"/><br>
+              
+             <label >Categorias </label>
+             <select id="lista" >
+            <option value="">Selecione...</option>
+            <option value="Smartphone">Smartphones</option>
+            <option value="Eletrodomestico">Eletrodomeestico</option>
+            <option value="Notebooks">Notebooks</option>
+            <option value="Acessórios">Acessórios</option>
+        </select> <br>
+         <label for="foto">Foto: </label>
+            <input type="file" name="foto" id="foto" /> <br>
+
+        <input type="submit" value="Salvar"/>
+            </form>
+    
+    </div>
+        
+       
+            <script src="javascript.js"> </script>
+    </body>
+</html>
