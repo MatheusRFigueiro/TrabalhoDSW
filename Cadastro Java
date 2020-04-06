@@ -1,0 +1,36 @@
+function validar(){
+    var v1 = document.getElementById("txtName");
+    var nome = v1.value;
+    var v2 = document.getElementById("txtValor");
+    var valor = v2.value;
+    var v3 = document.getElementById("txtQuantidade");
+    var quant = v3.value;
+    var v4 = document.getElementById("txtData");
+    var data = v4.value;
+    var s1 = document.getElementById("lista");
+    var select = s1.value;
+    var ft = document.getElementById("Foto");
+    var foto = ft.value;
+    
+    if( nome.length<=0 ){
+        alert("Campo 'Nome' Inválido");
+        return false;
+    }else if(quant.length<=0 ){
+        alert("Campo 'Quantidade' Inválido");
+        return false;
+    }else if(valor.length<=0 ){
+        alert("Campo 'Valor' Inválido");
+        return false;
+    }else if(data.length<=0 ){
+        alert("Campo 'Data de Validade' Inválido");
+        return false;
+    }else if(select.value==0 ){
+        alert("Selecione uma categoria");
+        return false;
+    }else if(foto.value==0 ){
+        alert("Insira uma imagem");
+        return false;
+    }else{
+        return true;
+    }
+}
